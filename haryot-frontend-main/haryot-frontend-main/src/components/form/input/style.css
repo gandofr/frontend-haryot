@@ -1,0 +1,20 @@
+.basic-input {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  height: auto;
+  box-sizing: border-box;
+  transition: padding-top 0.1s ease, padding-bottom 0.1s ease;
+}
+
+.basic-input:focus {
+  padding-top: 1.3rem;
+  padding-bottom: 0.3rem;
+}
+.basic-input:not(:placeholder-shown) + .basic-label {
+  opacity: 0;
+}
+
+.basic-input:focus + .basic-label,
+.basic-input:placeholder-shown + .basic-label {
+  opacity: 1;
+}
